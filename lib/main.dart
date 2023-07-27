@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       child: BlocProvider<AutoCompleteCubit>(
         create: (context) => AutoCompleteCubit(),
         child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           theme: ThemeData(useMaterial3: true),
           home: const HomePage(),
         ),

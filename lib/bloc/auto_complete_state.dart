@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class AutoCompleteState {
   final String input;
   final List<String> keywords;
@@ -14,6 +16,7 @@ class AutoCompleteState {
   AutoCompleteState copyWith({
     String? input,
     List<String>? keywords,
+    List<TextSpan>? highlightText,
   }) {
     return AutoCompleteState(
       input: input ?? this.input,
